@@ -2,6 +2,7 @@ require "./config/environment"
 require "./app/models/user"
 class ApplicationController < Sinatra::Base
 #Securing password code along
+#here is another test line
 	configure do
 		set :views, "app/views"
 		enable :sessions
