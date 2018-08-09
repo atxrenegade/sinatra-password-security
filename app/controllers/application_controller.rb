@@ -1,7 +1,7 @@
 require "./config/environment"
 require "./app/models/user"
 class ApplicationController < Sinatra::Base
-
+#Securing password code along
 	configure do
 		set :views, "app/views"
 		enable :sessions
@@ -68,5 +68,4 @@ class ApplicationController < Sinatra::Base
 			User.find(session[:user_id])
 		end
 	end
-
 end
